@@ -1,0 +1,20 @@
+galaxy_info:
+  author: Felix Boerner
+  description: Manage Adapta GTK theme installation
+  company: Felix Boerner
+  license: MIT
+  min_ansible_version: 2.3
+  github_branch: master
+  platforms:
+   - name: Ubuntu
+     versions:
+       - xenial
+  galaxy_tags:
+    - adapta
+    - theme
+    - gtk
+    - gnome
+    - unity
+    - material
+    - design
+dependencies: []
