@@ -29,10 +29,18 @@
   tags:
     - adapta
 
-- name: Install Unity Tweak Tool packages
+- name: Install Unity Tweak Tool package
   apt:
     name: unity-tweak-tool
     state: present
   when: ansible_distribution == 'Ubuntu'
+  tags:
+    - adapta
+
+- name: Install Gnome Tweak Tool package
+  apt:
+    name: gnome-tweak-tool
+    state: present
+  when: ansible_os_family == 'Debian'
   tags:
     - adapta
